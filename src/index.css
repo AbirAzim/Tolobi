@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Comfortaa", cursive;
+	font-size: 1rem;
+}
+.container {
+	width: 70%;
+	margin: auto;
+}
+
+.circle {
+	position: relative;
+}
+.circle::after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: -11px;
+	width: 15px;
+	height: 15px;
+	background: #2f2f2f;
+	border-radius: 50%;
+}
+
+.svg-even {
+	position: absolute;
+	margin-left: 27%;
+}
+.svg-even circle {
+	height: 100%;
+	width: 100%;
+	fill: none;
+	stroke-width: 3;
+	transform: translate(5px, 2px);
+}
+
+.svg-even circle:nth-child(2) {
+	stroke: #2f2f2f;
+	stroke-dasharray: 223px;
+	stroke-dashoffset: -331px;
+}
+
+.svg-odd {
+	position: absolute;
+	margin-left: 27%;
+}
+.svg-odd circle {
+	height: 100%;
+	width: 100%;
+	fill: none;
+	stroke-width: 3;
+	transform: translate(5px, 2px);
+}
+
+.svg-odd circle:nth-child(2) {
+	stroke: #2f2f2f;
+	stroke-dasharray: 223px;
+	stroke-dashoffset: -108px;
+}
+
+/*down arrow added*/
+
+.down-arrow {
+	position: relative;
+	margin-top: 2rem;
+}
+.down-arrow::after {
+	content: "";
+	position: absolute;
+	top: -51.88px;
+	left: -5px;
+	height: 3.5rem;
+	width: 3px;
+	background: #2f2f2f;
+}
+.down-arrow::before {
+	content: "\25BC";
+	position: absolute;
+	top: 0px;
+	left: -11.4px;
+}
+
+.greenish-tr {
+	background-color: #00a857;
+}
+
+.greenish-th {
+	background-color: #00a857;
+}
+
+.active-th {
+	background-color: #ffffff;
+}
+.active-tr {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color: #ffffff;
+	border-radius: 10px;
+	transform: scale(1);
+}
+
+.top-left {
+	border-top-left-radius: 10px;
+}
+
+.top-right {
+	border-top-right-radius: 10px;
+}
+.bottom-left {
+	border-bottom-left-radius: 10px;
+}
+
+.bottom-right {
+	border-bottom-left-radius: 10px;
+}
+
+.display-flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.table-row-item {
+	text-align: center;
+	height: 5rem;
+}
+.table-row-item {
+	text-align: center;
+
+	padding: 1rem;
+	font-size: 12px;
+	padding: 2rem;
+	font-size: 12px;
+}
+
+.non-active-faq-item {
+	box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
+	background: #ffffff;
+}
+
+.active-faq-item {
+	background-color: #e4fff2;
+	transition: 0.5s;
+}
+
+
+@media (max-width: 1440px) {
+	.svg-even {
+		margin-left: 26%;
+	}
+
+	.svg-odd {
+		margin-left: 26%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.svg-even {
+		margin-left: 26%;
+	}
+
+	.svg-odd {
+		margin-left: 26%;
+	}
+
+}
+
+
+
+@media (max-width: 910px) {
+	.svg-even {
+		margin-left: 25%;
+	}
+
+	.svg-odd {
+		margin-left: 25%;
+	}
+
+	.svg-even circle:nth-child(2) {
+		stroke: #2f2f2f;
+		stroke-dasharray: 222px;
+		stroke-dashoffset: -331px;
+	}
+}
+
+
+
+@media (max-width: 894px) {
+	.svg-even {
+		margin-left: 24.5%;
+	}
+
+	.timeline__middle-icon {
+		margin-left: 24%;
+	}
+}
+
+
+
+@media (max-width: 860px) {
+	.svg-even {
+		margin-left: 23%;
+	}
+
+	.svg-odd {
+		margin-left: 24.8%;
+	}
+
+	.svg-even circle:nth-child(2) {
+		stroke-dasharray: 224px;
+		stroke-dashoffset: -330px;
+	}
+	
+	
+}
+
+@media (max-width: 768px) {
+	.circle {
+		position: relative;
+		margin-top: 3rem;
+	}
+	.circle::after {
+		content: "";
+		position: absolute;
+		top: -15px;
+		left: -11px;
+		background: #2f2f2f;
+	}
+	.timeline {
+		margin-top: 6rem;
+	}
+
+	.svg-even {
+		margin-left: 21%;
+	}
+
+	.svg-odd {
+		margin-left: 21%;
+	}
+
+	.svg-even circle:nth-child(2) {
+		stroke-dasharray: 217px;
+		stroke-dashoffset: -328px;
+	}
+
+	.down-arrow::after {
+		top: -82.88px;
+		left: -3px;
+	}
+	.down-arrow::before {
+		top: -31px;
+		left: -10.4px;
+	}
+}
